@@ -1,16 +1,88 @@
 html {
-    background-color: #f1f5f9;
+    background-color: #ffffff;
     font-family: sans-serif;
   }
   
   body {
-    margin: 0 auto;
     width: 100%;
-    max-width: 80ch;
+    height: 100vh;
     padding: 1rem;
-    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* line-height: 1.5; */
   }
-  
+
+  .layoutContainer {
+    /* background-color: beige; */
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+  }
+
+  .navContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    padding-right: 1.5rem;
+    border-right: solid black 1px;
+  }
+
+  .iconHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .navList {
+    font-size: 1.25rem;
+    font-weight: 100;
+    margin-left: 2.95rem;
+    line-height: 2.5rem;
+    padding-left: 1rem;
+    border-left: solid black 1px;
+  }
+
+  .titleIconContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+  }
+  .headshot {
+    width: 15rem;
+    min-width: 15rem;
+    /* height: 23rem */
+  }
+
+  .bioContainer {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .bioText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 200;
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: 200;
+  }
+
+  p {
+    max-width: 32rem;
+  }
+  /*
+
+
   * {
     box-sizing: border-box;
   }
@@ -78,4 +150,4 @@ html {
     .hamburger {
       display: none;
     }  
-  }
+  } */
