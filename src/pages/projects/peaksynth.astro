@@ -1,33 +1,32 @@
 ---
 import MainLayout from "../../layouts/MainLayout.astro";
 import LinkButton from "../../components/LinkButton.astro";
-import ReactLogo from "../../components/logos/ReactLogo.astro";
-import TypescriptLogo from "../../components/logos/TypescriptLogo.astro";
-import PostgresLogo from "../../components/logos/PostgresLogo.astro";
-import COEQWALLogo from "../../components/logos/COEQWALLogo.astro";
+import MusicIcon from "../../components/icon/MusicIcon.astro";
+import CppLogo from "../../components/logos/CppLogo.astro";
 ---
 
 <style>
   .logo {
     margin-bottom: 15rem;
-    color: #41729f;
+    color: rgb(100, 135, 103);
   }
   h1 {
     font-size: 2.75rem;
   }
 </style>
 
-<MainLayout pageTitle="COEQWAL">
+<MainLayout pageTitle="PeakSynth">
   <div class="blockContainer">
     <div class="logo">
-      <COEQWALLogo />
+      <MusicIcon />
     </div>
     <div class="blockText">
       <div class="titleIconContainer">
-        <h1>COEQWAL Data Vis</h1>
-        <ReactLogo />
-        <TypescriptLogo />
-        <PostgresLogo />
+        <h1>PeakSynth</h1>
+        <a href="https://juce.com/made-with-juce/">
+          <img src="/JUCE_Logo.png" width="36" />
+        </a>
+        <CppLogo />
       </div>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor neque
@@ -40,11 +39,7 @@ import COEQWALLogo from "../../components/logos/COEQWALLogo.astro";
       </p>
       <div class="linkList">
         <LinkButton
-          link="https://live-coeqwal-ca.pantheon.berkeley.edu/"
-          text="COEQWAL Website"
-        />
-        <LinkButton
-          link="https://github.com/owennjpr/COEQWAL-WebGame"
+          link="https://github.com/owennjpr/PeakSynth-Audio-Plugin"
           text="Project Repository"
         />
       </div>

@@ -41,6 +41,10 @@ import IconHeader from "./IconHeader.astro";
   li:hover {
     background-color: rgb(170, 205, 173);
   }
+
+  a {
+    cursor: pointer;
+  }
 </style>
 
 <div class="navContainer">
@@ -64,5 +68,5 @@ import IconHeader from "./IconHeader.astro";
   <IconHeader text="Skills">
     <CodeIcon />
   </IconHeader>
-  <IconHeader text="Home"><HomeIcon /> </IconHeader>
+  <a href="/"><IconHeader text="Home"><HomeIcon /> </IconHeader> </a>
 </div>

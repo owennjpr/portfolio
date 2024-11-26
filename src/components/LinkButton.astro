@@ -24,6 +24,6 @@ const { link, text } = Astro.props;
 </style>
 
 <a href={link}>
-  <p>{text}</p>
+  {text ? <p>{text}</p> : null}
   <LinkIcon />
 </a>

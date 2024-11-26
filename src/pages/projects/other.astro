@@ -1,0 +1,110 @@
+---
+import LighIcon from "../../components/icon/LighIcon.astro";
+import JoystickIcon from "../../components/icon/JoystickIcon.astro";
+import SearchIcon from "../../components/icon/SearchIcon.astro";
+import PersonIcon from "../../components/icon/PersonIcon.astro";
+import LinkButton from "../../components/LinkButton.astro";
+import BlenderLogo from "../../components/logos/BlenderLogo.astro";
+import CSharpLogo from "../../components/logos/CSharpLogo.astro";
+import UnityLogo from "../../components/logos/UnityLogo.astro";
+import AstroLogo from "../../components/logos/AstroLogo.astro";
+import HTMLLogo from "../../components/logos/HTMLLogo.astro";
+import CSSLogo from "../../components/logos/CSSLogo.astro";
+import JavascriptLogo from "../../components/logos/JavascriptLogo.astro";
+
+import MainLayout from "../../layouts/MainLayout.astro";
+---
+
+<style>
+  .logo {
+    margin-bottom: 4rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    max-width: 32rem;
+  }
+</style>
+
+<MainLayout pageTitle="Other">
+  <div class="multiContainer">
+    <div class="blockContainer">
+      <div class="logo">
+        <LighIcon />
+      </div>
+      <div class="blockText">
+        <div class="titleIconContainer">
+          <h1>Lumina</h1>
+          <UnityLogo />
+          <CSharpLogo />
+          <BlenderLogo />
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor
+          neque leo, eu euismod nunc dapibus vulputate. In blandit sit amet erat
+          in volutpat.
+        </p>
+      </div>
+      <LinkButton link="https://github.com/owennjpr/LuminaGame" text="" />
+    </div>
+    <div class="blockContainer">
+      <div class="logo">
+        <JoystickIcon />
+      </div>
+      <div class="blockText">
+        <div class="titleIconContainer">
+          <h1>Shredasaurus</h1>
+          <UnityLogo />
+          <CSharpLogo />
+          <a href="https://www.apple.com/logic-pro/">
+            <img src="/Logic_Logo.png" width="36" />
+          </a>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor
+          neque leo, eu euismod nunc dapibus vulputate. In blandit sit amet erat
+          in volutpat.
+        </p>
+      </div>
+      <LinkButton link="https://owennjpr.itch.io/shredasaurus" text="" />
+    </div>
+    <div class="blockContainer">
+      <div class="logo">
+        <SearchIcon />
+      </div>
+      <div class="blockText">
+        <div class="titleIconContainer">
+          <h1>Charity Search</h1>
+          <HTMLLogo />
+          <JavascriptLogo />
+          <CSSLogo />
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor
+          neque leo, eu euismod nunc dapibus vulputate. In blandit sit amet erat
+          in volutpat.
+        </p>
+      </div>
+      <LinkButton
+        link="https://owennjpr.github.io/JumboHack2024_CharitySearch/home.html"
+        text=""
+      />
+    </div>
+    <div class="blockContainer">
+      <div class="logo">
+        <PersonIcon />
+      </div>
+      <div class="blockText">
+        <div class="titleIconContainer">
+          <h1>Portfolio</h1>
+          <AstroLogo />
+        </div>
+        <p>
+          The website you are on right now! Built with Astro for storing
+          everything I have worked on in one place.
+        </p>
+      </div>
+    </div>
+  </div>
+</MainLayout>
