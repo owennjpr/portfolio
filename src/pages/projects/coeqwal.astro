@@ -1,0 +1,54 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import LinkButton from "../../components/LinkButton.astro";
+import ReactLogo from "../../components/logos/ReactLogo.astro";
+import TypescriptLogo from "../../components/logos/TypescriptLogo.astro";
+import PostgresLogo from "../../components/logos/PostgresLogo.astro";
+import COEQWALLogo from "../../components/logos/COEQWALLogo.astro";
+---
+
+<style>
+  .logo {
+    margin-bottom: 29rem;
+    color: #41729f;
+  }
+  h1 {
+    font-size: 2.75rem;
+  }
+</style>
+
+<MainLayout pageTitle="Home">
+  <div class="blockContainer">
+    <div class="logo">
+      <COEQWALLogo />
+    </div>
+    <div class="blockText">
+      <div class="titleIconContainer">
+        <h1>COEQWAL Data Vis</h1>
+        <ReactLogo />
+        <TypescriptLogo />
+        <PostgresLogo />
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor neque
+        leo, eu euismod nunc dapibus vulputate. In blandit sit amet erat in
+        volutpat. Vivamus vel volutpat ante. Cras lorem ex, fringilla quis nibh
+        vel, malesuada volutpat arcu. Curabitur eu eros sed felis mattis
+        convallis ac sed lorem. Sed facilisis diam ac ultricies bibendum.
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+        cubilia curae; Donec semper auctor leo.
+      </p>
+      <div class="linkList">
+        <LinkButton
+          link="https://live-coeqwal-ca.pantheon.berkeley.edu/"
+          text="COEQWAL Website"
+        />
+        <LinkButton
+          link="https://github.com/owennjpr/COEQWAL-WebGame"
+          text="Project Repository"
+        />
+      </div>
+      <img src="/coeqwal_dashboard.png" class="fullImage" />
+    </div>
+  </div>
+</MainLayout>

@@ -1,0 +1,47 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import LinkButton from "../../components/LinkButton.astro";
+import ReactLogo from "../../components/logos/ReactLogo.astro";
+import TypescriptLogo from "../../components/logos/TypescriptLogo.astro";
+import MongoLogo from "../../components/logos/MongoLogo.astro";
+import ExpoLogo from "../../components/logos/ExpoLogo.astro";
+import FirebaseLogo from "../../components/logos/FirebaseLogo.astro";
+import FreeBitesLogo from "../../components/logos/FreeBitesLogo.astro";
+---
+
+<style>
+  .logo {
+    margin-bottom: 15rem;
+  }
+</style>
+
+<MainLayout pageTitle="Home">
+  <div class="blockContainer">
+    <div class="logo">
+      <FreeBitesLogo />
+    </div>
+    <div class="blockText">
+      <div class="titleIconContainer">
+        <h1>FreeBites</h1>
+        <ReactLogo />
+        <TypescriptLogo />
+        <ExpoLogo />
+        <MongoLogo />
+        <FirebaseLogo />
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor neque
+        leo, eu euismod nunc dapibus vulputate. In blandit sit amet erat in
+        volutpat. Vivamus vel volutpat ante. Cras lorem ex, fringilla quis nibh
+        vel, malesuada volutpat arcu. Curabitur eu eros sed felis mattis
+        convallis ac sed lorem. Sed facilisis diam ac ultricies bibendum.
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+        cubilia curae; Donec semper auctor leo.
+      </p>
+      <LinkButton
+        link="https://apps.apple.com/us/app/freebites/id6664051907"
+        text="App Store"
+      />
+    </div>
+  </div>
+</MainLayout>

@@ -6,13 +6,50 @@ import HomeIcon from "./icon/HomeIcon.astro";
 import IconHeader from "./IconHeader.astro";
 ---
 
+<style>
+  .navContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    padding-right: 1.5rem;
+    border-right: solid black 1px;
+  }
+
+  .iconHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .navList {
+    font-size: 1.25rem;
+    font-weight: 100;
+    margin-left: 2.95rem;
+    line-height: 2.5rem;
+    border-left: solid black 1px;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  li {
+    cursor: pointer;
+    padding-left: 1rem;
+  }
+  li:hover {
+    background-color: rgb(170, 205, 173);
+  }
+</style>
+
 <div class="navContainer">
   <IconHeader text="Projects"> <GearIcon /></IconHeader>
   <ul class="navList">
-    <li>FreeBites</li>
-    <li>COEQWAL</li>
-    <li>PeakSynth</li>
-    <li>Other</li>
+    <a href="/projects/freebites"><li>FreeBites</li></a>
+    <a href="/projects/coeqwal"><li>COEQWAL</li></a>
+    <a href="/projects/peaksynth"><li>PeakSynth</li></a>
+    <a href="/projects/other"><li>Other</li></a>
   </ul>
   <IconHeader text="Experience">
     <ClipboardIcon />

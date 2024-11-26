@@ -6,3 +6,12 @@ const { text } = Astro.props;
   <slot />
   <h2 class="navHeader">{text}</h2>
 </div>
+
+<style>
+  .iconHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+  }
+</style>

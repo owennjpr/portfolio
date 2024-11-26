@@ -1,0 +1,29 @@
+---
+import LinkIcon from "./icon/LinkIcon.astro";
+
+const { link, text } = Astro.props;
+---
+
+<style>
+  a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(170, 205, 173);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    gap: 0.5rem;
+    border: solid rgb(170, 205, 173) 2px;
+  }
+
+  a:hover {
+    background-color: white;
+    color: rgb(120, 155, 123);
+  }
+</style>
+
+<a href={link}>
+  <p>{text}</p>
+  <LinkIcon />
+</a>
