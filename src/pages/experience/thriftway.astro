@@ -1,29 +1,24 @@
 ---
 import MainLayout from "../../layouts/MainLayout.astro";
 import LinkButton from "../../components/LinkButton.astro";
-import MusicIcon from "../../components/icon/MusicIcon.astro";
-import CppLogo from "../../components/logos/CppLogo.astro";
 ---
 
 <style>
-  .logo {
-    margin-bottom: 15rem;
-    color: rgb(100, 135, 103);
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    max-width: 42rem;
   }
 </style>
 
-<MainLayout pageTitle="PeakSynth">
+<MainLayout pageTitle="Thriftway">
   <div class="blockContainer">
-    <div class="logo">
-      <MusicIcon />
-    </div>
     <div class="blockText">
-      <div class="titleIconContainer">
-        <h1>PeakSynth</h1>
-        <a href="https://juce.com/made-with-juce/">
-          <img src="/JUCE_Logo.png" width="36" />
-        </a>
-        <CppLogo s="32" />
+      <div class="titleInfoContainer">
+        <h1>Thriftway</h1>
+        <p class="subtitle">Cashier and Courtesy Clerk</p>
+        <p class="date">(June 2022 - August 2022)</p>
       </div>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor neque
@@ -34,13 +29,10 @@ import CppLogo from "../../components/logos/CppLogo.astro";
         Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
         cubilia curae; Donec semper auctor leo.
       </p>
-      <div class="linkList">
-        <LinkButton
-          link="https://github.com/owennjpr/PeakSynth-Audio-Plugin"
-          text="Project Repository"
-        />
-      </div>
-      <!-- <img src="/coeqwal_dashboard.png" class="fullImage" /> -->
+      <LinkButton
+        link="https://www.westseattlethriftway.com/"
+        text="West Seattle Thriftway"
+      />
     </div>
   </div>
 </MainLayout>

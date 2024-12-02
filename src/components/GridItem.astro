@@ -1,0 +1,59 @@
+---
+const { text } = Astro.props;
+---
+
+<style>
+  .container {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+  }
+
+  .abs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black; /* Adjust as needed */
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: 1;
+  }
+
+  .icon {
+    transition: opacity 0.2s ease;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container:hover .icon {
+    opacity: 15%;
+  }
+
+  .container:hover .abs {
+    opacity: 1;
+    /* visibility: visible; */
+  }
+
+  p {
+    font-size: 0.75rem;
+    font-weight: 100;
+    margin: 0;
+    text-align: center;
+    z-index: 1;
+  }
+</style>
+
+<div class="container">
+  <div class="abs">
+    <p>{text}</p>
+  </div>
+  <div class="icon">
+    <slot />
+  </div>
+</div>

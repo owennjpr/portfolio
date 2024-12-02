@@ -37,6 +37,7 @@ import IconHeader from "./IconHeader.astro";
   li {
     cursor: pointer;
     padding-left: 1rem;
+    transition: background-color 0.25s ease;
   }
   li:hover {
     background-color: rgb(170, 205, 173);
@@ -59,14 +60,16 @@ import IconHeader from "./IconHeader.astro";
     <ClipboardIcon />
   </IconHeader>
   <ul class="navList">
-    <li>JumboCode</li>
-    <li>The IDEA Lab</li>
-    <li>iD Tech</li>
-    <li>Thriftway</li>
+    <a href="/experience/jumbocode"><li>JumboCode</li></a>
+    <a href="/experience/idealab"><li>The IDEA Lab</li></a>
+    <a href="/experience/idtech"><li>iD Tech</li></a>
+    <a href="/experience/thriftway"><li>Thriftway</li></a>
   </ul>
 
-  <IconHeader text="Skills">
-    <CodeIcon />
-  </IconHeader>
+  <a href="/skills"
+    ><IconHeader text="Skills">
+      <CodeIcon />
+    </IconHeader></a
+  >
   <a href="/"><IconHeader text="Home"><HomeIcon /> </IconHeader> </a>
 </div>

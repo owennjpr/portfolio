@@ -1,5 +1,6 @@
 ---
 import Navigation from "../components/Navigation.astro";
+import TitleCard from "../components/TitleCard.astro";
 import "../styles/global.css";
 const { pageTitle } = Astro.props;
 ---
@@ -11,9 +12,15 @@ const { pageTitle } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
+
     <style>
+      .titleContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
       .layoutContainer {
-        /* background-color: beige; */
         display: flex;
         flex-direction: row;
         gap: 6rem;
@@ -21,9 +28,12 @@ const { pageTitle } = Astro.props;
     </style>
   </head>
   <body>
-    <div class="layoutContainer">
-      <Navigation />
-      <slot />
+    <div class="titleContainer">
+      <TitleCard />
+      <div class="layoutContainer">
+        <Navigation />
+        <slot />
+      </div>
     </div>
   </body>
 </html>

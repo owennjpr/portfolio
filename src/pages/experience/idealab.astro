@@ -1,29 +1,24 @@
 ---
 import MainLayout from "../../layouts/MainLayout.astro";
 import LinkButton from "../../components/LinkButton.astro";
-import MusicIcon from "../../components/icon/MusicIcon.astro";
-import CppLogo from "../../components/logos/CppLogo.astro";
 ---
 
 <style>
-  .logo {
-    margin-bottom: 15rem;
-    color: rgb(100, 135, 103);
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    max-width: 42rem;
   }
 </style>
 
-<MainLayout pageTitle="PeakSynth">
+<MainLayout pageTitle="IDEA Lab">
   <div class="blockContainer">
-    <div class="logo">
-      <MusicIcon />
-    </div>
     <div class="blockText">
-      <div class="titleIconContainer">
-        <h1>PeakSynth</h1>
-        <a href="https://juce.com/made-with-juce/">
-          <img src="/JUCE_Logo.png" width="36" />
-        </a>
-        <CppLogo s="32" />
+      <div class="titleInfoContainer">
+        <h1>The IDEA Lab</h1>
+        <p class="subtitle">Project Researcher</p>
+        <p class="date">(Feb 2023 - Present)</p>
       </div>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor neque
@@ -35,12 +30,12 @@ import CppLogo from "../../components/logos/CppLogo.astro";
         cubilia curae; Donec semper auctor leo.
       </p>
       <div class="linkList">
+        <LinkButton link="https://sites.tufts.edu/idea/" text="The IDEA Lab" />
         <LinkButton
-          link="https://github.com/owennjpr/PeakSynth-Audio-Plugin"
-          text="Project Repository"
+          link="https://sites.tufts.edu/idea/owl-head/"
+          text="Owlhead"
         />
       </div>
-      <!-- <img src="/coeqwal_dashboard.png" class="fullImage" /> -->
     </div>
   </div>
 </MainLayout>
