@@ -34,6 +34,14 @@ import IconHeader from "./IconHeader.astro";
     margin-bottom: 0;
   }
 
+  .bigLink {
+    transition: color 0.25s ease;
+  }
+
+  .bigLink:hover {
+    color: rgb(170, 205, 173);
+  }
+
   li {
     cursor: pointer;
     padding-left: 1rem;
@@ -41,6 +49,7 @@ import IconHeader from "./IconHeader.astro";
   }
   li:hover {
     background-color: rgb(170, 205, 173);
+    color: white;
   }
 
   a {
@@ -66,10 +75,12 @@ import IconHeader from "./IconHeader.astro";
     <a href="/experience/thriftway"><li>Thriftway</li></a>
   </ul>
 
-  <a href="/skills"
+  <a href="/skills" class="bigLink"
     ><IconHeader text="Skills">
       <CodeIcon />
     </IconHeader></a
   >
-  <a href="/"><IconHeader text="Home"><HomeIcon /> </IconHeader> </a>
+  <a href="/" class="bigLink"
+    ><IconHeader text="Home"><HomeIcon /> </IconHeader>
+  </a>
 </div>
