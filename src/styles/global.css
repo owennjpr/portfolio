@@ -92,6 +92,7 @@ html {
 
   p {
     max-width: 40em;
+    color: rgb(84, 84, 84);
   }
 
   .logoLarge {
