@@ -9,79 +9,32 @@ import IconHeader from "./IconHeader.astro";
 <style>
   .navContainer {
     display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-
-    padding-right: 1.5rem;
-    border-right: solid black 1px;
-  }
-
-  .iconHeader {
-    display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 0.75rem;
+    justify-content: center;
+    gap: 1rem;
   }
 
-  .navList {
-    font-size: 1.25rem;
-    font-weight: 100;
-    margin-left: 2.95rem;
-    line-height: 2.25rem;
-    border-left: solid black 1px;
-    list-style-type: none;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .bigLink {
-    transition: color 0.25s ease;
-  }
-
-  .bigLink:hover {
-    color: rgb(170, 205, 173);
-  }
-
-  li {
-    cursor: pointer;
-    padding-left: 1rem;
-    transition: background-color 0.25s ease;
-  }
-  li:hover {
+  a:hover {
     background-color: rgb(170, 205, 173);
     color: white;
   }
 
   a {
+    transition: background-color 0.25s ease;
     cursor: pointer;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1rem;
+    background: white;
   }
 </style>
 
 <div class="navContainer">
-  <IconHeader text="Projects"> <GearIcon /></IconHeader>
-  <ul class="navList">
-    <a href="/AstroPortfolioSite/projects/freebites"><li>FreeBites</li></a>
-    <a href="/AstroPortfolioSite/projects/coeqwal"><li>COEQWAL</li></a>
-    <a href="/AstroPortfolioSite/projects/peaksynth"><li>PeakSynth</li></a>
-    <a href="/AstroPortfolioSite/projects/other"><li>More</li></a>
-  </ul>
-  <IconHeader text="Experience">
-    <ClipboardIcon />
-  </IconHeader>
-  <ul class="navList">
-    <a href="/AstroPortfolioSite/experience/jumbocode"><li>JumboCode</li></a>
-    <a href="/AstroPortfolioSite/experience/ta"><li>TA</li></a>
-    <a href="/AstroPortfolioSite/experience/idealab"><li>The IDEA Lab</li></a>
-    <a href="/AstroPortfolioSite/experience/idtech"><li>iD Tech</li></a>
-    <a href="/AstroPortfolioSite/experience/thriftway"><li>Thriftway</li></a>
-  </ul>
-
-  <a href="/AstroPortfolioSite/skills" class="bigLink"
-    ><IconHeader text="Skills">
-      <CodeIcon />
-    </IconHeader></a
-  >
-  <a href="/AstroPortfolioSite/" class="bigLink"
-    ><IconHeader text="Home"><HomeIcon /> </IconHeader>
+  <a href="/AstroPortfolioSite/skills"><h3 class="navHeader">Projects</h3> </a>
+  <a href="/AstroPortfolioSite/skills"
+    ><h3 class="navHeader">Experience</h3>
   </a>
+  <a href="/AstroPortfolioSite/skills"><h3 class="navHeader">Skills</h3> </a>
 </div>

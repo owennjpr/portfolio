@@ -1,0 +1,248 @@
+---
+import LinkButton from "../components/LinkButton.astro";
+import ReactLogo from "../components/logos/ReactLogo.astro";
+import TypescriptLogo from "../components/logos/TypescriptLogo.astro";
+import MongoLogo from "../components/logos/MongoLogo.astro";
+import ExpoLogo from "../components/logos/ExpoLogo.astro";
+import FirebaseLogo from "../components/logos/FirebaseLogo.astro";
+import FreeBitesLogo from "../components/logos/FreeBitesLogo.astro";
+import PostgresLogo from "../components/logos/PostgresLogo.astro";
+import COEQWALLogo from "../components/logos/COEQWALLogo.astro";
+import MusicIcon from "../components/icon/MusicIcon.astro";
+import CppLogo from "../components/logos/CppLogo.astro";
+
+import LighIcon from "../components/icon/LighIcon.astro";
+import JoystickIcon from "../components/icon/JoystickIcon.astro";
+import SearchIcon from "../components/icon/SearchIcon.astro";
+import PersonIcon from "../components/icon/PersonIcon.astro";
+import BlenderLogo from "../components/logos/BlenderLogo.astro";
+import CSharpLogo from "../components/logos/CSharpLogo.astro";
+import UnityLogo from "../components/logos/UnityLogo.astro";
+import AstroLogo from "../components/logos/AstroLogo.astro";
+import HTMLLogo from "../components/logos/HTMLLogo.astro";
+import CSSLogo from "../components/logos/CSSLogo.astro";
+import JavascriptLogo from "../components/logos/JavascriptLogo.astro";
+import PaintIcon from "../components/icon/PaintIcon.astro";
+---
+
+<style>
+  .logo {
+    /* margin-bottom: 15rem; */
+  }
+</style>
+
+<div class="categoryContainer">
+  <h1>Projects</h1>
+  <div class="blockContainer">
+    <div class="logo">
+      <FreeBitesLogo />
+    </div>
+    <div class="blockText">
+      <div class="titleIconContainer">
+        <h2>FreeBites</h2>
+        <ReactLogo s="32" />
+        <TypescriptLogo s="32" />
+        <ExpoLogo s="32" />
+        <MongoLogo s="32" />
+        <FirebaseLogo s="32" />
+      </div>
+      <p>
+        For over 6 months now I have been part of a 13 person team of fellow
+        Tufts students developing "FreeBites", a mobile app for discovering and
+        posting free food, combating food insecurity and waste. I joined the
+        team several months before release to help prepare for launch,
+        delivering new features and fixes for each sprint over the Summer.
+        <br />
+        <br />
+        Since the app released in October, we have accumulated over 1000 downloads
+        and I have continued to work along with our designers and the rest of the
+        development team to deliver consistent post-launch updates. Looking forward,
+        we have begun work on scaling the app to have it ready to expand to other
+        universities and institutions.
+      </p>
+      <LinkButton
+        link="https://apps.apple.com/us/app/freebites/id6664051907"
+        text="App Store"
+      />
+    </div>
+  </div>
+  <div class="blockContainer">
+    <div class="logo">
+      <COEQWALLogo />
+    </div>
+    <div class="blockText">
+      <div class="titleIconContainer">
+        <h2>COEQWAL Data Visualization</h2>
+        <ReactLogo s="32" />
+        <TypescriptLogo s="32" />
+        <PostgresLogo s="32" />
+      </div>
+      <p>
+        This project is a collaboration with UC Berkeley's Colaboratory for
+        Equity in Water Allocation (COEQWAL) to develop an accessible data
+        visualization tool to help the general public better understand water
+        allocation challenges in California.
+        <br />
+        <br />
+        California has extensive water infrastructure, however due to its dry climate
+        and intermittent rainfall it can be very difficult to consistently meet all
+        of the state's water demands. Unfortunately, the decision-making process
+        behind these water management choices is not very clear to the average person.
+        COEQWAL is attempting increase transparency and awareness around these issues
+        by providing people with the data and resources to understand potential water
+        management futures.
+        <br />
+        <br />
+        The website I am creating serves as a companion to the core project, providing
+        a simplified visualization of real data that abstracts away some of the more
+        confusing elements to provide a "first step" into understanding California's
+        many water management challenges. The site is still in development with a
+        completed functional prototype in the repository below.
+      </p>
+      <div class="linkList">
+        <LinkButton
+          link="https://live-coeqwal-ca.pantheon.berkeley.edu/"
+          text="COEQWAL Website"
+        />
+        <LinkButton
+          link="https://github.com/owennjpr/COEQWAL-WebGame"
+          text="Project Repository"
+        />
+      </div>
+      <!-- <img src="/coeqwal_dashboard.png" class="fullImage" /> -->
+    </div>
+  </div>
+
+  <div class="blockContainer">
+    <div class="logo">
+      <MusicIcon />
+    </div>
+    <div class="blockText">
+      <div class="titleIconContainer">
+        <h2>PeakSynth</h2>
+        <a href="https://juce.com/made-with-juce/">
+          <img src="/AstroPortfolioSite/JUCE_Logo.png" width="36" />
+        </a>
+        <CppLogo s="32" />
+      </div>
+      <p>
+        PeakSynth is an open source audio plugin I built using C++ and the JUCE
+        framework, capable of interfacing with any Digital Audio Workstation
+        software. The plugin takes ambient noise and live MIDI input, melding
+        them into a harmonic mix of tonal and textural sounds. You can find a
+        longer description with some audio demos at the repository linked below.
+      </p>
+      <div class="linkList">
+        <LinkButton
+          link="https://github.com/owennjpr/PeakSynth-Audio-Plugin"
+          text="Project Repository"
+        />
+      </div>
+    </div>
+  </div>
+
+  <h1>Other Projects</h1>
+
+  <div class="blockContainer">
+    <div class="logo">
+      <PaintIcon />
+    </div>
+    <div class="blockText">
+      <div class="titleIconContainer">
+        <h1>Synesthesiazer</h1>
+        <HTMLLogo s="32" />
+        <JavascriptLogo s="32" />
+        <CSSLogo s="32" />
+      </div>
+      <p>
+        A small research group dedicated to creating a multitrack spatial audio
+        recorder in Virtual Reality, doubling as an experimental chromesthesia
+        simulator. This project is overseen by a Tufts professor who wanted to
+        recreate the interactive audiovisual experience of his synesthesia in a
+        Virtual Reality context. The goal is to create something in Unity VR
+        that records head tracking data and uses it to recreate the recorder's
+        audio spatialization experience for a recipient with a tracked visual
+        component.
+      </p>
+    </div>
+  </div>
+  <div class="blockContainer">
+    <div class="logo">
+      <LighIcon />
+    </div>
+    <div class="blockText">
+      <div class="titleIconContainer">
+        <h1>Lumina</h1>
+        <UnityLogo s="32" />
+        <CSharpLogo s="32" />
+        <BlenderLogo s="32" />
+      </div>
+      <p>
+        A first person puzzle game currently in development in Unity, involving
+        extensive scripting in C#, 3D modeling in Blender, and movement-based
+        puzzle design.
+      </p>
+    </div>
+    <LinkButton link="https://github.com/owennjpr/LuminaGame" text="" />
+  </div>
+  <div class="blockContainer">
+    <div class="logo">
+      <JoystickIcon />
+    </div>
+    <div class="blockText">
+      <div class="titleIconContainer">
+        <h1>Shredasaurus</h1>
+        <UnityLogo s="32" />
+        <CSharpLogo s="32" />
+        <a href="https://www.apple.com/logic-pro/">
+          <img src="/AstroPortfolioSite/Logic_Logo.png" width="36" />
+        </a>
+      </div>
+      <p>
+        A game about a skateboarding dinosaur created in 2 weeks for the
+        DINOJAM4 game jam (we placed top 5!) on itch.io. I collaborated with 4
+        other developers and 3D modelers, working on level design, scripting,
+        and the music.
+      </p>
+    </div>
+    <LinkButton link="https://owennjpr.itch.io/shredasaurus" text="" />
+  </div>
+  <div class="blockContainer">
+    <div class="logo">
+      <SearchIcon />
+    </div>
+    <div class="blockText">
+      <div class="titleIconContainer">
+        <h1>Charity Search</h1>
+        <HTMLLogo s="32" />
+        <JavascriptLogo s="32" />
+        <CSSLogo s="32" />
+      </div>
+      <p>
+        The first website I ever created! I built this simple website with two
+        friends for the Tufts JumboHack 2024 Hackathon, starting my journey into
+        web development.
+      </p>
+    </div>
+    <LinkButton
+      link="https://owennjpr.github.io/JumboHack2024_CharitySearch/home.html"
+      text=""
+    />
+  </div>
+
+  <div class="blockContainer">
+    <div class="logo">
+      <PersonIcon />
+    </div>
+    <div class="blockText">
+      <div class="titleIconContainer">
+        <h1>Portfolio</h1>
+        <AstroLogo s="32px" />
+      </div>
+      <p>
+        The website you are on right now! Built with Astro for archiving all the
+        stuff I've worked on in one place.
+      </p>
+    </div>
+  </div>
+</div>

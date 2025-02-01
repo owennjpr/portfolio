@@ -26,8 +26,8 @@ import UnityLogo from "./logos/UnityLogo.astro";
 <style>
   .grid {
     display: grid;
-    grid-template-columns: repeat(8, 5rem);
-    grid-template-rows: repeat(2, 5rem);
+    grid-template-columns: repeat(6, 6rem);
+    grid-template-rows: repeat(2, 6rem);
     gap: 1rem;
   }
   .gridItem {
@@ -37,11 +37,11 @@ import UnityLogo from "./logos/UnityLogo.astro";
   .vert {
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    gap: 0.5rem;
+    align-items: center;
+    gap: 1rem;
   }
   .category {
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: 100;
     margin-top: 1rem;
   }
@@ -58,59 +58,63 @@ import UnityLogo from "./logos/UnityLogo.astro";
     font-weight: 100;
   }
 </style>
-<div class="blockContainer vert">
-  <p class="category">Programming Languages</p>
-  <div class="grid">
-    <GridItem text="C"> <CLogo s="72" /> </GridItem>
-    <GridItem text="C++"> <CppLogo s="72" /> </GridItem>
-    <GridItem text="C#"> <CSharpLogo s="72" /> </GridItem>
-    <GridItem text="Python"> <PythonLogo s="72" /> </GridItem>
-    <GridItem text="JavaScript"> <JavascriptLogo s="72" /> </GridItem>
-    <GridItem text="TypeScript"> <TypescriptLogo s="72" /> </GridItem>
-    <GridItem text="HTML5"> <HTMLLogo s="72" /> </GridItem>
-    <GridItem text="CSS"> <CSSLogo s="72" /> </GridItem>
-    <GridItem text="JUCE">
-      <a href="https://juce.com/made-with-juce/">
-        <img src="/AstroPortfolioSite/JUCE_Logo.png" width="72" />
-      </a>
-    </GridItem>
-    <GridItem text="">
-      <div class="gridEmpty">
-        <p class="emptyText">SQL</p>
-      </div>
-    </GridItem>
 
-    <GridItem text="">
-      <div class="gridEmpty">
-        <p class="emptyText" style="font-size: 0.75rem;">Assembly</p>
-      </div>
-    </GridItem>
-  </div>
-  <p class="category">Other Platforms, Frameworks, and Software</p>
-  <div class="grid">
-    <GridItem text="React"> <ReactLogo s="72" /> </GridItem>
-    <GridItem text="MongoDB"> <MongoLogo s="72" /> </GridItem>
-    <GridItem text="PostgreSQL"> <PostgresLogo s="72" /> </GridItem>
-    <GridItem text="Firebase"> <FirebaseLogo s="72" /> </GridItem>
-    <GridItem text="Expo"> <ExpoLogo s="72" /> </GridItem>
-    <GridItem text="Tailwind CSS"> <TailwindLogo s="72" /> </GridItem>
-    <GridItem text="Git"> <GithubLogo s="72" /> </GridItem>
-    <GridItem text="GCP"> <GCPLogo s="72" /> </GridItem>
-    <GridItem text="Next.js"> <NextJSLogo s="72" /> </GridItem>
-    <GridItem text="Node.js"> <NodeJSLogo s="72" /> </GridItem>
-    <GridItem text="Unity"> <UnityLogo s="72" /> </GridItem>
-    <GridItem text="Blender"> <BlenderLogo s="72" /> </GridItem>
-    <GridItem text="Logic Pro">
-      <a href="https://www.apple.com/logic-pro/">
-        <img src="/AstroPortfolioSite/Logic_Logo.png" width="72" />
-      </a>
-    </GridItem>
+<div class="categoryContainer">
+  <h1>Skills</h1>
+  <div class="blockContainer vert">
+    <h2>Programming Languages</h2>
+    <div class="grid">
+      <GridItem text="C"> <CLogo s="72" /> </GridItem>
+      <GridItem text="C++"> <CppLogo s="72" /> </GridItem>
+      <GridItem text="C#"> <CSharpLogo s="72" /> </GridItem>
+      <GridItem text="Python"> <PythonLogo s="72" /> </GridItem>
+      <GridItem text="JavaScript"> <JavascriptLogo s="72" /> </GridItem>
+      <GridItem text="TypeScript"> <TypescriptLogo s="72" /> </GridItem>
+      <GridItem text="HTML5"> <HTMLLogo s="72" /> </GridItem>
+      <GridItem text="CSS"> <CSSLogo s="72" /> </GridItem>
+      <GridItem text="JUCE">
+        <a href="https://juce.com/made-with-juce/">
+          <img src="/AstroPortfolioSite/JUCE_Logo.png" width="72" />
+        </a>
+      </GridItem>
+      <GridItem text="">
+        <div class="gridEmpty">
+          <p class="emptyText">SQL</p>
+        </div>
+      </GridItem>
 
-    <GridItem text="Ableton Live">
-      <a href="">
-        <img src="/AstroPortfolioSite/Ableton_Logo.png" width="72" />
-      </a>
-    </GridItem>
-    <GridItem text="Izotope Plugins"><IzotopeLogo s="72" /> </GridItem>
+      <GridItem text="">
+        <div class="gridEmpty">
+          <p class="emptyText" style="font-size: 0.75rem;">Assembly</p>
+        </div>
+      </GridItem>
+    </div>
+    <h2>Other Platforms, Frameworks, and Software</h2>
+    <div class="grid">
+      <GridItem text="React"> <ReactLogo s="72" /> </GridItem>
+      <GridItem text="MongoDB"> <MongoLogo s="72" /> </GridItem>
+      <GridItem text="PostgreSQL"> <PostgresLogo s="72" /> </GridItem>
+      <GridItem text="Firebase"> <FirebaseLogo s="72" /> </GridItem>
+      <GridItem text="Expo"> <ExpoLogo s="72" /> </GridItem>
+      <GridItem text="Tailwind CSS"> <TailwindLogo s="72" /> </GridItem>
+      <GridItem text="Git"> <GithubLogo s="72" /> </GridItem>
+      <GridItem text="GCP"> <GCPLogo s="72" /> </GridItem>
+      <GridItem text="Next.js"> <NextJSLogo s="72" /> </GridItem>
+      <GridItem text="Node.js"> <NodeJSLogo s="72" /> </GridItem>
+      <GridItem text="Unity"> <UnityLogo s="72" /> </GridItem>
+      <GridItem text="Blender"> <BlenderLogo s="72" /> </GridItem>
+      <GridItem text="Logic Pro">
+        <a href="https://www.apple.com/logic-pro/">
+          <img src="/AstroPortfolioSite/Logic_Logo.png" width="72" />
+        </a>
+      </GridItem>
+
+      <GridItem text="Ableton Live">
+        <a href="">
+          <img src="/AstroPortfolioSite/Ableton_Logo.png" width="72" />
+        </a>
+      </GridItem>
+      <GridItem text="Izotope Plugins"><IzotopeLogo s="72" /> </GridItem>
+    </div>
   </div>
 </div>

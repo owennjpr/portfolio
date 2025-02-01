@@ -6,8 +6,8 @@ import LinkedInLogo from "./logos/LinkedInLogo.astro";
 
 <style>
   .headshot {
-    width: 15rem;
-    min-width: 15rem;
+    width: 12rem;
+    min-width: 12rem;
   }
   .bioText {
     display: flex;
@@ -19,20 +19,26 @@ import LinkedInLogo from "./logos/LinkedInLogo.astro";
   }
 </style>
 
-<div class="blockContainer">
-  <img src="/AstroPortfolioSite/headshot.JPG" class="headshot" />
-  <div class="blockText">
-    <div class="titleIconContainer">
-      <h1>Hi, I'm Owen!</h1>
-      <GithubLogo s="28" />
-      <LinkedInLogo />
-      <MailIcon />
+<div class="categoryContainer">
+  <div class="blockContainer">
+    <img
+      style={{ borderRadius: "50%" }}
+      src="/AstroPortfolioSite/headshotSquare.JPG"
+      class="headshot"
+    />
+    <div class="blockText">
+      <h2>Hi, I'm Owen Prendergast!</h2>
+      <p>
+        I am an undergraduate Computer Science and Science, Technology, and
+        Society major at Tufts University from Seattle, Washington. My work
+        focuses on web development, audio, and software designed for social
+        impact. Explore this site to see everything I have been working on!
+      </p>
+      <div class="titleIconContainer">
+        <GithubLogo s="28" />
+        <LinkedInLogo />
+        <MailIcon />
+      </div>
     </div>
-    <p>
-      I am an undergraduate Computer Science and Science, Technology, and
-      Society major at Tufts University from Seattle, Washington. My work
-      focuses on web development, audio, and software designed for social
-      impact. Explore this site to see everything I have been working on!
-    </p>
   </div>
 </div>
