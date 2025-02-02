@@ -3,6 +3,12 @@ import LinkButton from "../components/LinkButton.astro";
 import Header from "./Header.astro";
 ---
 
+<style>
+  p {
+    max-width: 40rem;
+  }
+</style>
+
 <div class="categoryContainer">
   <Header text="Experience" />
   <div class="blockContainer">
@@ -20,10 +26,12 @@ import Header from "./Header.astro";
         students and grade asisgnments, providing feedback on their work and
         coding practices.
       </p>
-      <LinkButton
-        link="https://www.cs.tufts.edu/comp/105/"
-        text="CS105 Course Site"
-      />
+      <div class="linkList">
+        <LinkButton
+          link="https://www.cs.tufts.edu/comp/105/"
+          text="CS105 Course Site"
+        />
+      </div>
     </div>
   </div>
 
@@ -65,7 +73,9 @@ import Header from "./Header.astro";
         school aged students and developed engaging lessons for diverse learning
         styles.
       </p>
-      <LinkButton link="https://www.idtech.com/" text="iD Tech" />
+      <div class="linkList">
+        <LinkButton link="https://www.idtech.com/" text="iD Tech" />
+      </div>
     </div>
   </div>
 
@@ -107,10 +117,12 @@ import Header from "./Header.astro";
         Maintained efficient and friendly service during hectic and high
         pressure periods.
       </p>
-      <LinkButton
-        link="https://www.westseattlethriftway.com/"
-        text="West Seattle Thriftway"
-      />
+      <div class="linkList">
+        <LinkButton
+          link="https://www.westseattlethriftway.com/"
+          text="West Seattle Thriftway"
+        />
+      </div>
     </div>
   </div>
 </div>
