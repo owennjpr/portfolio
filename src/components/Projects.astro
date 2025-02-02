@@ -23,16 +23,11 @@ import HTMLLogo from "../components/logos/HTMLLogo.astro";
 import CSSLogo from "../components/logos/CSSLogo.astro";
 import JavascriptLogo from "../components/logos/JavascriptLogo.astro";
 import PaintIcon from "../components/icon/PaintIcon.astro";
+import Header from "./Header.astro";
 ---
 
-<style>
-  .logo {
-    /* margin-bottom: 15rem; */
-  }
-</style>
-
 <div class="categoryContainer">
-  <h1>Projects</h1>
+  <Header text="Projects" />
   <div class="blockContainer">
     <div class="logo">
       <FreeBitesLogo />
@@ -40,11 +35,13 @@ import PaintIcon from "../components/icon/PaintIcon.astro";
     <div class="blockText">
       <div class="titleIconContainer">
         <h2>FreeBites</h2>
-        <ReactLogo s="32" />
-        <TypescriptLogo s="32" />
-        <ExpoLogo s="32" />
-        <MongoLogo s="32" />
-        <FirebaseLogo s="32" />
+        <div class="iconsContainer">
+          <ReactLogo s="32" />
+          <TypescriptLogo s="32" />
+          <ExpoLogo s="32" />
+          <MongoLogo s="32" />
+          <FirebaseLogo s="32" />
+        </div>
       </div>
       <p>
         For over 6 months now I have been part of a 13 person team of fellow
@@ -73,9 +70,11 @@ import PaintIcon from "../components/icon/PaintIcon.astro";
     <div class="blockText">
       <div class="titleIconContainer">
         <h2>COEQWAL Data Visualization</h2>
-        <ReactLogo s="32" />
-        <TypescriptLogo s="32" />
-        <PostgresLogo s="32" />
+        <div class="iconsContainer">
+          <ReactLogo s="32" />
+          <TypescriptLogo s="32" />
+          <PostgresLogo s="32" />
+        </div>
       </div>
       <p>
         This project is a collaboration with UC Berkeley's Colaboratory for
@@ -120,10 +119,12 @@ import PaintIcon from "../components/icon/PaintIcon.astro";
     <div class="blockText">
       <div class="titleIconContainer">
         <h2>PeakSynth</h2>
-        <a href="https://juce.com/made-with-juce/">
-          <img src="/AstroPortfolioSite/JUCE_Logo.png" width="36" />
-        </a>
-        <CppLogo s="32" />
+        <div class="iconsContainer">
+          <a href="https://juce.com/made-with-juce/">
+            <img src="/AstroPortfolioSite/JUCE_Logo.png" width="36" />
+          </a>
+          <CppLogo s="32" />
+        </div>
       </div>
       <p>
         PeakSynth is an open source audio plugin I built using C++ and the JUCE
@@ -141,7 +142,7 @@ import PaintIcon from "../components/icon/PaintIcon.astro";
     </div>
   </div>
 
-  <h1>Other Projects</h1>
+  <Header text="Other Projects" />
 
   <div class="blockContainer">
     <div class="logo">
@@ -149,10 +150,12 @@ import PaintIcon from "../components/icon/PaintIcon.astro";
     </div>
     <div class="blockText">
       <div class="titleIconContainer">
-        <h1>Synesthesiazer</h1>
-        <HTMLLogo s="32" />
-        <JavascriptLogo s="32" />
-        <CSSLogo s="32" />
+        <h2>Synesthesiazer</h2>
+        <div class="iconsContainer">
+          <HTMLLogo s="32" />
+          <JavascriptLogo s="32" />
+          <CSSLogo s="32" />
+        </div>
       </div>
       <p>
         A small research group dedicated to creating a multitrack spatial audio
@@ -172,10 +175,13 @@ import PaintIcon from "../components/icon/PaintIcon.astro";
     </div>
     <div class="blockText">
       <div class="titleIconContainer">
-        <h1>Lumina</h1>
-        <UnityLogo s="32" />
-        <CSharpLogo s="32" />
-        <BlenderLogo s="32" />
+        <h2>Lumina</h2>
+        <div class="iconsContainer">
+          <UnityLogo s="32" />
+          <CSharpLogo s="32" />
+          <BlenderLogo s="32" />
+          <LinkButton link="https://github.com/owennjpr/LuminaGame" text="" />
+        </div>
       </div>
       <p>
         A first person puzzle game currently in development in Unity, involving
@@ -183,7 +189,6 @@ import PaintIcon from "../components/icon/PaintIcon.astro";
         puzzle design.
       </p>
     </div>
-    <LinkButton link="https://github.com/owennjpr/LuminaGame" text="" />
   </div>
   <div class="blockContainer">
     <div class="logo">
@@ -191,12 +196,15 @@ import PaintIcon from "../components/icon/PaintIcon.astro";
     </div>
     <div class="blockText">
       <div class="titleIconContainer">
-        <h1>Shredasaurus</h1>
-        <UnityLogo s="32" />
-        <CSharpLogo s="32" />
-        <a href="https://www.apple.com/logic-pro/">
-          <img src="/AstroPortfolioSite/Logic_Logo.png" width="36" />
-        </a>
+        <h2>Shredasaurus</h2>
+        <div class="iconsContainer">
+          <UnityLogo s="32" />
+          <CSharpLogo s="32" />
+          <a href="https://www.apple.com/logic-pro/">
+            <img src="/AstroPortfolioSite/Logic_Logo.png" width="36" />
+          </a>
+          <LinkButton link="https://owennjpr.itch.io/shredasaurus" text="" />
+        </div>
       </div>
       <p>
         A game about a skateboarding dinosaur created in 2 weeks for the
@@ -205,7 +213,6 @@ import PaintIcon from "../components/icon/PaintIcon.astro";
         and the music.
       </p>
     </div>
-    <LinkButton link="https://owennjpr.itch.io/shredasaurus" text="" />
   </div>
   <div class="blockContainer">
     <div class="logo">
@@ -213,10 +220,16 @@ import PaintIcon from "../components/icon/PaintIcon.astro";
     </div>
     <div class="blockText">
       <div class="titleIconContainer">
-        <h1>Charity Search</h1>
-        <HTMLLogo s="32" />
-        <JavascriptLogo s="32" />
-        <CSSLogo s="32" />
+        <h2>Charity Search</h2>
+        <div class="iconsContainer">
+          <HTMLLogo s="32" />
+          <JavascriptLogo s="32" />
+          <CSSLogo s="32" />
+          <LinkButton
+            link="https://owennjpr.github.io/JumboHack2024_CharitySearch/home.html"
+            text=""
+          />
+        </div>
       </div>
       <p>
         The first website I ever created! I built this simple website with two
@@ -224,10 +237,6 @@ import PaintIcon from "../components/icon/PaintIcon.astro";
         web development.
       </p>
     </div>
-    <LinkButton
-      link="https://owennjpr.github.io/JumboHack2024_CharitySearch/home.html"
-      text=""
-    />
   </div>
 
   <div class="blockContainer">
@@ -236,8 +245,10 @@ import PaintIcon from "../components/icon/PaintIcon.astro";
     </div>
     <div class="blockText">
       <div class="titleIconContainer">
-        <h1>Portfolio</h1>
-        <AstroLogo s="32px" />
+        <h2>Portfolio</h2>
+        <div class="iconsContainer">
+          <AstroLogo s="32px" />
+        </div>
       </div>
       <p>
         The website you are on right now! Built with Astro for archiving all the

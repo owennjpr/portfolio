@@ -1,5 +1,6 @@
 ---
 import GridItem from "./GridItem.astro";
+import Header from "./Header.astro";
 import BlenderLogo from "./logos/BlenderLogo.astro";
 import CLogo from "./logos/CLogo.astro";
 import CppLogo from "./logos/CppLogo.astro";
@@ -30,6 +31,21 @@ import UnityLogo from "./logos/UnityLogo.astro";
     grid-template-rows: repeat(2, 6rem);
     gap: 1rem;
   }
+
+  @media only screen and (max-width: 800px) {
+    .grid {
+      grid-template-columns: repeat(4, 6rem);
+      grid-template-rows: repeat(3, 6rem);
+    }
+  }
+
+  @media only screen and (max-width: 550px) {
+    .grid {
+      grid-template-columns: repeat(3, 6rem);
+      grid-template-rows: repeat(4, 6rem);
+    }
+  }
+
   .gridItem {
     background-color: rgb(192, 137, 242);
   }
@@ -44,6 +60,7 @@ import UnityLogo from "./logos/UnityLogo.astro";
     font-size: 2rem;
     font-weight: 100;
     margin-top: 1rem;
+    text-align: center;
   }
   .gridEmpty {
     border: black solid 1px;
@@ -60,7 +77,7 @@ import UnityLogo from "./logos/UnityLogo.astro";
 </style>
 
 <div class="categoryContainer">
-  <h1>Skills</h1>
+  <Header text="Skills" />
   <div class="blockContainer vert">
     <h2>Programming Languages</h2>
     <div class="grid">
