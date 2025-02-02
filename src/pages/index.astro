@@ -5,12 +5,14 @@ import Projects from "../components/Projects.astro";
 import Experience from "../components/Experience.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import SkillGrid from "../components/SkillGrid.astro";
+import BottomNav from "../components/BottomNav.astro";
 ---
 
 <MainLayout pageTitle="Owen Prendergast">
-  <Bio />
+  <section id="bio"><Bio /></section>
   <Navigation />
   <section id="projects"><Projects /></section>
   <section id="experience"><Experience /></section>
   <section id="skills"><SkillGrid /></section>
+  <BottomNav />
 </MainLayout>
