@@ -24,6 +24,7 @@ import CSSLogo from "../components/logos/CSSLogo.astro";
 import JavascriptLogo from "../components/logos/JavascriptLogo.astro";
 import PaintIcon from "../components/icon/PaintIcon.astro";
 import Header from "./Header.astro";
+import ReactNative from "./logos/ReactNative.astro";
 ---
 
 <div class="categoryContainer">
@@ -36,7 +37,7 @@ import Header from "./Header.astro";
       <div class="titleIconContainer">
         <h2>FreeBites</h2>
         <div class="iconsContainer">
-          <ReactLogo s="32" />
+          <ReactNative s="32" />
           <TypescriptLogo s="32" />
           <ExpoLogo s="32" />
           <MongoLogo s="32" />
@@ -57,10 +58,12 @@ import Header from "./Header.astro";
         we have begun work on scaling the app to have it ready to expand to other
         universities and institutions.
       </p>
-      <LinkButton
-        link="https://apps.apple.com/us/app/freebites/id6664051907"
-        text="App Store"
-      />
+      <div class="linkList">
+        <LinkButton
+          link="https://apps.apple.com/us/app/freebites/id6664051907"
+          text="App Store"
+        />
+      </div>
     </div>
   </div>
   <div class="blockContainer">

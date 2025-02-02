@@ -24,6 +24,8 @@ html {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    align-items: center;
+
   }
 
   @media only screen and (max-width: 600px) {
@@ -98,6 +100,7 @@ html {
     flex-direction: row;
     align-items: center;
     gap: 1rem;
+    margin-top: 1rem;
   }
 
   .fullImage {
@@ -127,7 +130,7 @@ html {
   }
 
   p {
-    max-width: 40em;
+    max-width: 36rem;
     color: rgb(84, 84, 84);
   }
 
@@ -141,12 +144,12 @@ html {
 
   .categoryContainer {
     background: rgb(255, 255, 255);
-    border-radius: 2rem;
+    border-radius: 1rem;
     padding: 1rem;
     padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
     align-items: center;
 
   }

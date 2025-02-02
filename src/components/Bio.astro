@@ -9,15 +9,25 @@ import LinkedInLogo from "./logos/LinkedInLogo.astro";
     width: 12rem;
     min-width: 12rem;
   }
-  .bioText {
+
+  .bioBlockContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .bioBlockContainer {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 </style>
 
 <div class="categoryContainer">
-  <div class="blockContainer">
+  <div class="bioBlockContainer">
     <img
       style={{ borderRadius: "50%" }}
       src="/AstroPortfolioSite/headshotSquare.JPG"
@@ -31,7 +41,7 @@ import LinkedInLogo from "./logos/LinkedInLogo.astro";
         focuses on web development, audio, and software designed for social
         impact. Explore this site to see everything I have been working on!
       </p>
-      <div class="titleIconContainer">
+      <div class="iconsContainer">
         <GithubLogo s="28" />
         <LinkedInLogo />
         <MailIcon />
