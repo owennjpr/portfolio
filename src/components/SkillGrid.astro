@@ -20,6 +20,7 @@ import PostgresLogo from "./logos/PostgresLogo.astro";
 import PythonLogo from "./logos/PythonLogo.astro";
 import ReactLogo from "./logos/ReactLogo.astro";
 import ReactNative from "./logos/ReactNative.astro";
+import SQLLogo from "./logos/SQLLogo.astro";
 import TailwindLogo from "./logos/TailwindLogo.astro";
 import TypescriptLogo from "./logos/TypescriptLogo.astro";
 import UnityLogo from "./logos/UnityLogo.astro";
@@ -85,7 +86,9 @@ import UnityLogo from "./logos/UnityLogo.astro";
       <GridItem text="C"> <CLogo s="72" /> </GridItem>
       <GridItem text="C++"> <CppLogo s="72" /> </GridItem>
       <GridItem text="C#"> <CSharpLogo s="72" /> </GridItem>
-      <GridItem text="Python"> <PythonLogo s="72" /> </GridItem>
+      <GridItem text="Python">
+        <img src="/portfolio/python.png" width="72" />
+      </GridItem>
       <GridItem text="JavaScript"> <JavascriptLogo s="72" /> </GridItem>
       <GridItem text="TypeScript"> <TypescriptLogo s="72" /> </GridItem>
       <GridItem text="HTML5"> <HTMLLogo s="72" /> </GridItem>
@@ -95,16 +98,12 @@ import UnityLogo from "./logos/UnityLogo.astro";
           <img src="/portfolio/JUCE_Logo.png" width="72" />
         </a>
       </GridItem>
-      <GridItem text="">
-        <div class="gridEmpty">
-          <p class="emptyText">SQL</p>
-        </div>
+      <GridItem text="SQL">
+        <SQLLogo s="72" />
       </GridItem>
 
-      <GridItem text="">
-        <div class="gridEmpty">
-          <p class="emptyText" style="font-size: 0.75rem;">Assembly</p>
-        </div>
+      <GridItem text="Assembly">
+        <img src="/portfolio/assembly.png" width="72" />
       </GridItem>
     </div>
     <h2 style="margin-top: 2rem; text-align: center;">
@@ -118,7 +117,9 @@ import UnityLogo from "./logos/UnityLogo.astro";
       <GridItem text="PostgreSQL"> <PostgresLogo s="72" /> </GridItem>
       <GridItem text="Firebase"> <FirebaseLogo s="72" /> </GridItem>
       <GridItem text="Expo"> <ExpoLogo s="72" /> </GridItem>
-      <GridItem text="Tailwind CSS"> <TailwindLogo s="72" /> </GridItem>
+      <GridItem text="Tailwind CSS">
+        <img src="/portfolio/tailwind.png" width="72" />
+      </GridItem>
       <GridItem text="Git"> <GithubLogo s="72" /> </GridItem>
       <GridItem text="GCP"> <GCPLogo s="72" /> </GridItem>
       <GridItem text="Next.js"> <NextJSLogo s="72" /> </GridItem>
