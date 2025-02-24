@@ -25,6 +25,8 @@ import JavascriptLogo from "../components/logos/JavascriptLogo.astro";
 import PaintIcon from "../components/icon/PaintIcon.astro";
 import Header from "./Header.astro";
 import ReactNative from "./logos/ReactNative.astro";
+import NextJSLogo from "./logos/NextJSLogo.astro";
+import VercelLogo from "./logos/VercelLogo.astro";
 ---
 
 <div class="categoryContainer">
@@ -138,6 +140,54 @@ import ReactNative from "./logos/ReactNative.astro";
       <div class="linkList">
         <LinkButton
           link="https://github.com/owennjpr/PeakSynth-Audio-Plugin"
+          text="Project Repository"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="blockContainer">
+    <div class="logo">
+      <img
+        src="/portfolio/WAOT_Logo.png"
+        alt="Who's Afraid of Tailwind? Logo"
+        width="90"
+        height="90"
+      />
+    </div>
+    <div class="blockText">
+      <div class="titleIconContainer">
+        <h3>Who's Afraid of Tailwind?</h3>
+        <div class="iconsContainer">
+          <ReactLogo s="32" />
+          <img src="/portfolio/tailwind.png" width="32" />
+          <TypescriptLogo s="32" />
+          <NextJSLogo s="32" />
+          <VercelLogo s="32" />
+        </div>
+      </div>
+      <p>
+        A project I built for the Tufts JumboHack 2025 Hackathon along with four
+        other developers and a designer. We wanted to make a web development
+        teaching tool dedicated to learning Tailwind, since we had all felt that
+        there were not too many resources for this when we were trying to first
+        learn the framework. <br />
+        <br />
+        With our name inspired by Barnett Newman's famous abstract painting series
+        "Who's Afraid of Red, Yellow, And Blue", we wanted to create a set of educational
+        Tailwind challenges centered around recreating famous abstract artworks,
+        each teaching the user about how to invoke key CSS properties like flexbox,
+        grid, and border radius in Tailwind. The website uses a live code editor
+        for the user to get instant visual feedback on their work and an image difference
+        checker for seeing how well they were able to match the original paintings.
+      </p>
+      <div class="linkList">
+        <LinkButton
+          link="https://whos-afraid-tailwind.vercel.app/"
+          text="Who's Afraid of Tailwind?"
+        />
+        <LinkButton
+          link="https://github.com/asendlakowski/whos-afraid-tailwind"
           text="Project Repository"
         />
       </div>
