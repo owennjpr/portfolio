@@ -8,6 +8,9 @@ import LinkedInLogo from "./logos/LinkedInLogo.astro";
   .headshot {
     width: 12rem;
     min-width: 12rem;
+    box-shadow:
+      20px 20px 60px #c5c5c5,
+      -20px -20px 60px #ffffff;
   }
 
   .bioBlockContainer {
@@ -33,14 +36,16 @@ import LinkedInLogo from "./logos/LinkedInLogo.astro";
       src="/portfolio/headshotSquare.JPG"
       class="headshot"
     />
-    <div class="blockText">
-      <h2>Hi, I'm Owen Prendergast!</h2>
-      <p>
-        I am a senior majoring in Computer Science and Science, Technology, and
-        Society (STS) at Tufts University, originally from Seattle, Washington.
-        My work focuses on web development, audio, and software designed for
-        social impact. Explore this site to see everything I have been working
-        on!
+    <div class="blockText items-center sm:items-start">
+      <h2 class="text-2xl sm:text-[2rem] text-center sm:text-start">
+        Hi, I'm Owen Prendergast!
+      </h2>
+      <p class="text-sm sm:text-base text-center sm:text-start">
+        I am a recent graduate from Tufts University with a BS in Computer
+        Science and Science, Technology, and Society (STS), originally from
+        Seattle, Washington. My work focuses on web development, audio, and
+        software designed for social impact. Explore this site to see everything
+        I have been working on!
       </p>
       <div class="iconsContainer">
         <GithubLogo s="28" />

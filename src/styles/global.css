@@ -1,5 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Your custom styles below */
+
 html {
-    background-color: rgb(236, 236, 236);
+    background-color: #e8e8e8;
     font-family: sans-serif;
   }
   
@@ -13,19 +18,12 @@ html {
   }
 
   /* rgb(100, 135, 103); */
-  .titleIconContainer {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    align-items: center;
-  }
 
   .iconsContainer {
     display: flex;
     flex-direction: row;
     gap: 1rem;
     align-items: center;
-
   }
 
   @media only screen and (max-width: 600px) {
@@ -36,13 +34,6 @@ html {
     }
   }
 
-  .titleInfoContainer {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    align-items: baseline; 
-    /* justify-content: space-between; */
-  }
 
 
   .subtitle {
@@ -72,7 +63,7 @@ html {
 
   .blockContainer {
     display: flex;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     gap: 1.5rem;
     padding: 1rem;
   }
@@ -91,16 +82,8 @@ html {
   .blockText {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     gap: 0.5rem;
-  }
-
-  .linkList {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
   }
 
   .fullImage {
@@ -143,7 +126,10 @@ html {
   }
 
   .categoryContainer {
-    background: rgb(255, 255, 255);
+    background: #e8e8e8;
+    box-shadow:
+      8px 8px 24px #c5c5c5,
+      -8px -8px 24px #ffffff;
     border-radius: 1rem;
     padding: 1rem;
     padding-bottom: 2rem;
@@ -162,7 +148,7 @@ html {
   ::-webkit-scrollbar-track {
     /* border: 1px black solid; */
     
-    background: rgb(243, 243, 243);
+    background: #e8e8e8;
   }
    
   /* Handle */

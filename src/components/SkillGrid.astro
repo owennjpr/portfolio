@@ -38,14 +38,17 @@ import VercelLogo from "./logos/VercelLogo.astro";
   @media only screen and (max-width: 800px) {
     .grid {
       grid-template-columns: repeat(4, 6rem);
-      grid-template-rows: repeat(3, 6rem);
     }
   }
 
   @media only screen and (max-width: 550px) {
     .grid {
       grid-template-columns: repeat(3, 6rem);
-      grid-template-rows: repeat(4, 6rem);
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .grid {
+      grid-template-columns: repeat(2, 6rem);
     }
   }
 
@@ -82,7 +85,7 @@ import VercelLogo from "./logos/VercelLogo.astro";
 <div class="categoryContainer">
   <Header text="Skills" />
   <div class="blockContainer vert">
-    <h2>Programming Languages</h2>
+    <h2 class="text-2xl sm:text-3xl">Programming Languages</h2>
     <div class="grid">
       <GridItem text="C"> <CLogo s="72" /> </GridItem>
       <GridItem text="C++"> <CppLogo s="72" /> </GridItem>
@@ -102,13 +105,15 @@ import VercelLogo from "./logos/VercelLogo.astro";
         <img src="/portfolio/assembly.png" width="72" />
       </GridItem>
     </div>
-    <h2 style="margin-top: 2rem; text-align: center;">
+    <h2
+      class="text-xl sm:text-3xl"
+      style="margin-top: 2rem; text-align: center;"
+    >
       Other Platforms, Frameworks, and Software
     </h2>
     <div class="grid">
       <GridItem text="React"> <ReactLogo s="72" /> </GridItem>
       <GridItem text="React Native"> <ReactNative s="72" /> </GridItem>
-
       <GridItem text="MongoDB"> <MongoLogo s="72" /> </GridItem>
       <GridItem text="PostgreSQL"> <PostgresLogo s="72" /> </GridItem>
       <GridItem text="Firebase"> <FirebaseLogo s="72" /> </GridItem>

@@ -6,6 +6,7 @@ const { link, text } = Astro.props;
 
 <style>
   a {
+    width: fit-content;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,6 +29,6 @@ const { link, text } = Astro.props;
 </style>
 
 <a href={link}>
-  {text ? <p>{text}</p> : null}
+  {text ? <p class="text-sm sm:text-base">{text}</p> : null}
   <LinkIcon />
 </a>

@@ -27,18 +27,27 @@ import Header from "./Header.astro";
 import ReactNative from "./logos/ReactNative.astro";
 import NextJSLogo from "./logos/NextJSLogo.astro";
 import VercelLogo from "./logos/VercelLogo.astro";
+import NodeJSLogo from "./logos/NodeJSLogo.astro";
 ---
 
 <div class="categoryContainer">
   <Header text="Projects" />
-  <div class="blockContainer">
+  <div class="blockContainer flex-col items-center sm:items-start sm:flex-row">
     <div class="logo">
       <FreeBitesLogo />
     </div>
     <div class="blockText">
-      <div class="titleIconContainer">
-        <h2>FreeBites</h2>
-        <div class="iconsContainer">
+      <div
+        class="flex flex-col justify-center items-center sm:justify-start sm:flex-row gap-4"
+      >
+        <h2
+          class="text-2xl sm:text-4xl text-center sm:text-left w-full sm:w-auto"
+        >
+          FreeBites
+        </h2>
+        <div
+          class="iconsContainer justify-center sm:justify-start w-full sm:w-auto"
+        >
           <ReactNative s="32" />
           <TypescriptLogo s="32" />
           <ExpoLogo s="32" />
@@ -46,21 +55,25 @@ import VercelLogo from "./logos/VercelLogo.astro";
           <FirebaseLogo s="32" />
         </div>
       </div>
-      <p>
-        For over 6 months now I have been part of a 13 person team of fellow
-        Tufts students developing "FreeBites", a mobile app for discovering and
-        posting free food, combating food insecurity and waste. I joined the
-        team several months before release to help prepare for launch,
-        delivering new features and fixes for each sprint over the Summer.
+      <p class="text-sm sm:text-base text-center sm:text-start">
+        For over a year now I have been part of an almost 20 person team of
+        fellow Tufts students developing "FreeBites", a mobile app for
+        discovering and posting free food, combating food insecurity and waste.
+        I joined the team several months before release to help prepare for
+        launch, delivering consistent new features and fixes. After release I
+        have continued to work on new app features, devops, and the company's
+        web landing page.
         <br />
         <br />
-        Since the app released in October, we have accumulated over 1000 downloads
-        and I have continued to work along with our designers and the rest of the
-        development team to deliver consistent post-launch updates. Looking forward,
-        we have begun work on scaling the app to have it ready to expand to other
-        universities and institutions.
+        Since the app released in October 2024, we have accumulated over 1000 downloads
+        from within the Tufts community and continued to deliver consistent post-launch
+        updates. Looking forward, we have begun work on scaling the app to have it
+        ready to expand to other universities and institutions, as well as fundraising
+        to cover development costs.
       </p>
-      <div class="linkList">
+      <div
+        class="w-full flex flex-row mt-4 gap-4 justify-center sm:justify-start"
+      >
         <LinkButton
           link="https://apps.apple.com/us/app/freebites/id6664051907"
           text="App Store"
@@ -68,20 +81,28 @@ import VercelLogo from "./logos/VercelLogo.astro";
       </div>
     </div>
   </div>
-  <div class="blockContainer">
-    <div class="logo">
+  <div class="blockContainer flex-col items-center sm:items-start sm:flex-row">
+    <div class="text-blue-500">
       <COEQWALLogo />
     </div>
-    <div class="blockText">
-      <div class="titleIconContainer">
-        <h2>COEQWAL Data Visualization</h2>
-        <div class="iconsContainer">
+    <div class="blockText items-center sm:items-start">
+      <div
+        class="flex flex-col justify-center items-center sm:justify-start sm:flex-row gap-4"
+      >
+        <h2
+          class="text-xl sm:text-3xl text-center sm:text-left w-full sm:w-auto"
+        >
+          COEQWAL Data Visualization
+        </h2>
+        <div
+          class="iconsContainer justify-center sm:justify-start w-full sm:w-auto"
+        >
           <ReactLogo s="32" />
           <TypescriptLogo s="32" />
           <PostgresLogo s="32" />
         </div>
       </div>
-      <p>
+      <p class="text-sm sm:text-base text-center sm:text-start">
         This project is a collaboration with UC Berkeley's Colaboratory for
         Equity in Water Allocation (COEQWAL) to develop an accessible data
         visualization tool to help the general public better understand water
@@ -103,7 +124,9 @@ import VercelLogo from "./logos/VercelLogo.astro";
         many water management challenges. The site is still in development with a
         completed functional prototype in the repository below.
       </p>
-      <div class="linkList">
+      <div
+        class="w-full flex flex-row mt-4 gap-4 justify-center sm:justify-start"
+      >
         <LinkButton
           link="https://live-coeqwal-ca.pantheon.berkeley.edu/"
           text="COEQWAL Website"
@@ -115,29 +138,87 @@ import VercelLogo from "./logos/VercelLogo.astro";
       </div>
     </div>
   </div>
-
-  <div class="blockContainer">
+  <div class="blockContainer flex-col items-center sm:items-start sm:flex-row">
     <div class="logo">
+      <img
+        src="/portfolio/AppleLogoDark.png"
+        alt="Who's Afraid of Tailwind? Logo"
+        width="90"
+        height="90"
+        style="image-rendering: pixelated; display: block;"
+      />
+    </div>
+    <div class="blockText">
+      <div
+        class="flex flex-col justify-center items-center sm:justify-start sm:flex-row gap-4"
+      >
+        <h2
+          class="text-2xl sm:text-4xl text-center sm:text-left w-full sm:w-auto"
+        >
+          formerly.me
+        </h2>
+        <div
+          class="iconsContainer justify-center sm:justify-start w-full sm:w-auto"
+        >
+          <ReactLogo s="32" />
+          <TypescriptLogo s="32" />
+          <NextJSLogo s="32" />
+          <NodeJSLogo s="32" />
+          <VercelLogo s="32" />
+        </div>
+      </div>
+      <p class="text-sm sm:text-base text-center sm:text-start">
+        In addition to programming, one of the things I am most passionate about
+        is music. I create and release my own ambient electronic music, and I
+        wanted to have a website where I could archive everything I've created,
+        and a platform for some web based audio experiences. With this goal, I
+        created formerly.me, a living website that is constantly expanding with
+        new features and sub-projects.<br />
+        <br />
+        The site contains a mix of interactive ways to learn more about my released
+        music, as well as several endlessly generating algorithmic music compositions
+        like "Macrobiome" and "Tone Garden" built with TypeScript and the Web Audio
+        API.
+      </p>
+      <div
+        class="w-full flex flex-row mt-4 gap-4 justify-center sm:justify-start"
+      >
+        <LinkButton link="https://formerly.me" text="formerly.me" />
+      </div>
+    </div>
+  </div>
+  <div class="blockContainer flex-col items-center sm:items-start sm:flex-row">
+    <div class="text-[#aacdad]">
       <MusicIcon />
     </div>
     <div class="blockText">
-      <div class="titleIconContainer">
-        <h2>PeakSynth</h2>
-        <div class="iconsContainer">
+      <div
+        class="flex flex-col justify-center items-center sm:justify-start sm:flex-row gap-4"
+      >
+        <h2
+          class="text-2xl sm:text-4xl text-center sm:text-left w-full sm:w-auto"
+        >
+          PeakSynth
+        </h2>
+        <div
+          class="iconsContainer justify-center sm:justify-start w-full sm:w-auto"
+        >
           <a href="https://juce.com/made-with-juce/">
             <img src="/portfolio/JUCE_Logo.png" width="36" />
           </a>
           <CppLogo s="32" />
         </div>
       </div>
-      <p>
+      <p class="text-sm sm:text-base text-center sm:text-start">
         PeakSynth is an open source audio plugin I built using C++ and the JUCE
         framework, capable of interfacing with any Digital Audio Workstation
         software. The plugin takes ambient noise and live MIDI input, melding
         them into a harmonic mix of tonal and textural sounds. You can find a
         longer description with some audio demos at the repository linked below.
       </p>
-      <div class="linkList">
+      <div
+        class="w-full flex flex-row mt-4 gap-4 justify-center sm:justify-start"
+      >
         <LinkButton
           link="https://github.com/owennjpr/PeakSynth-Audio-Plugin"
           text="Project Repository"
@@ -146,7 +227,7 @@ import VercelLogo from "./logos/VercelLogo.astro";
     </div>
   </div>
 
-  <div class="blockContainer">
+  <div class="blockContainer flex-col items-center sm:items-start sm:flex-row">
     <div class="logo">
       <img
         src="/portfolio/WAOT_Logo.png"
@@ -156,9 +237,17 @@ import VercelLogo from "./logos/VercelLogo.astro";
       />
     </div>
     <div class="blockText">
-      <div class="titleIconContainer">
-        <h3>Who's Afraid of Tailwind?</h3>
-        <div class="iconsContainer">
+      <div
+        class="flex flex-col justify-center items-center sm:justify-start sm:flex-row gap-4"
+      >
+        <h3
+          class="text-xl sm:text-3xl text-center sm:text-left w-full sm:w-auto"
+        >
+          Who's Afraid of Tailwind?
+        </h3>
+        <div
+          class="iconsContainer justify-center sm:justify-start w-full sm:w-auto"
+        >
           <ReactLogo s="32" />
           <img src="/portfolio/tailwind.png" width="32" />
           <TypescriptLogo s="32" />
@@ -166,7 +255,7 @@ import VercelLogo from "./logos/VercelLogo.astro";
           <VercelLogo s="32" />
         </div>
       </div>
-      <p>
+      <p class="text-sm sm:text-base text-center sm:text-start">
         A project I built for the Tufts JumboHack 2025 Hackathon along with four
         other developers and a designer. We wanted to make a web development
         teaching tool dedicated to learning Tailwind, since we had all felt that
@@ -185,7 +274,9 @@ import VercelLogo from "./logos/VercelLogo.astro";
         instant visual feedback on their work and an image difference checker
         for seeing how well they were able to match the original paintings.
       </p>
-      <div class="linkList">
+      <div
+        class="w-full flex flex-row mt-4 gap-4 justify-center sm:justify-start"
+      >
         <LinkButton
           link="https://whos-afraid-tailwind.vercel.app/"
           text="Who's Afraid of Tailwind?"
@@ -200,19 +291,27 @@ import VercelLogo from "./logos/VercelLogo.astro";
 
   <Header text="Other Projects" />
 
-  <div class="blockContainer">
+  <div class="blockContainer flex-col items-center sm:items-start sm:flex-row">
     <div class="logo">
       <PaintIcon />
     </div>
     <div class="blockText">
-      <div class="titleIconContainer">
-        <h2>Synesthesiazer</h2>
-        <div class="iconsContainer">
+      <div
+        class="flex flex-col justify-center items-center sm:justify-start sm:flex-row gap-4"
+      >
+        <h2
+          class="text-2xl sm:text-3xl text-center sm:text-left w-full sm:w-auto"
+        >
+          Synesthesiazer
+        </h2>
+        <div
+          class="iconsContainer justify-center sm:justify-start w-full sm:w-auto"
+        >
           <UnityLogo s="32" />
           <CSharpLogo s="32" />
         </div>
       </div>
-      <p>
+      <p class="text-sm sm:text-base text-center sm:text-start">
         A small research group dedicated to creating a multitrack spatial audio
         recorder in Virtual Reality, doubling as an experimental <a
           style="color: rgb(139, 174, 142);"
@@ -226,35 +325,51 @@ import VercelLogo from "./logos/VercelLogo.astro";
       </p>
     </div>
   </div>
-  <div class="blockContainer">
+  <div class="blockContainer flex-col items-center sm:items-start sm:flex-row">
     <div class="logo">
       <LighIcon />
     </div>
     <div class="blockText">
-      <div class="titleIconContainer">
-        <h2>Lumina</h2>
-        <div class="iconsContainer">
+      <div
+        class="flex flex-col justify-center items-center sm:justify-start sm:flex-row gap-4"
+      >
+        <h2
+          class="text-2xl sm:text-3xl text-center sm:text-left w-full sm:w-auto"
+        >
+          Lumina
+        </h2>
+        <div
+          class="iconsContainer justify-center sm:justify-start w-full sm:w-auto"
+        >
           <UnityLogo s="32" />
           <CSharpLogo s="32" />
           <BlenderLogo s="32" />
           <LinkButton link="https://github.com/owennjpr/LuminaGame" text="" />
         </div>
       </div>
-      <p>
+      <p class="text-sm sm:text-base text-center sm:text-start">
         A first person puzzle game currently in development in Unity, involving
         extensive scripting in C#, 3D modeling in Blender, and movement-based
         puzzle design.
       </p>
     </div>
   </div>
-  <div class="blockContainer">
+  <div class="blockContainer flex-col items-center sm:items-start sm:flex-row">
     <div class="logo">
       <JoystickIcon />
     </div>
     <div class="blockText">
-      <div class="titleIconContainer">
-        <h2>Shredasaurus</h2>
-        <div class="iconsContainer">
+      <div
+        class="flex flex-col justify-center items-center sm:justify-start sm:flex-row gap-4"
+      >
+        <h2
+          class="text-2xl sm:text-3xl text-center sm:text-left w-full sm:w-auto"
+        >
+          Shredasaurus
+        </h2>
+        <div
+          class="iconsContainer justify-center sm:justify-start w-full sm:w-auto"
+        >
           <UnityLogo s="32" />
           <CSharpLogo s="32" />
           <a href="https://www.apple.com/logic-pro/">
@@ -263,7 +378,7 @@ import VercelLogo from "./logos/VercelLogo.astro";
           <LinkButton link="https://owennjpr.itch.io/shredasaurus" text="" />
         </div>
       </div>
-      <p>
+      <p class="text-sm sm:text-base text-center sm:text-start">
         A game about a skateboarding dinosaur created in 2 weeks for the
         DINOJAM4 game jam (we placed top 5!) on itch.io. I collaborated with 4
         other developers and 3D modelers, working on level design, scripting,
@@ -271,14 +386,22 @@ import VercelLogo from "./logos/VercelLogo.astro";
       </p>
     </div>
   </div>
-  <div class="blockContainer">
+  <div class="blockContainer flex-col items-center sm:items-start sm:flex-row">
     <div class="logo">
       <SearchIcon />
     </div>
     <div class="blockText">
-      <div class="titleIconContainer">
-        <h2>Charity Search</h2>
-        <div class="iconsContainer">
+      <div
+        class="flex flex-col justify-center items-center sm:justify-start sm:flex-row gap-4"
+      >
+        <h2
+          class="text-2xl sm:text-3xl text-center sm:text-left w-full sm:w-auto"
+        >
+          Charity Search
+        </h2>
+        <div
+          class="iconsContainer justify-center sm:justify-start w-full sm:w-auto"
+        >
           <HTMLLogo s="32" />
           <CSSLogo s="32" />
           <JavascriptLogo s="32" />
@@ -288,7 +411,7 @@ import VercelLogo from "./logos/VercelLogo.astro";
           />
         </div>
       </div>
-      <p>
+      <p class="text-sm sm:text-base text-center sm:text-start">
         The first website I ever created! I built this simple website with two
         friends for the Tufts JumboHack 2024 Hackathon, starting my journey into
         web development.
@@ -296,20 +419,30 @@ import VercelLogo from "./logos/VercelLogo.astro";
     </div>
   </div>
 
-  <div class="blockContainer">
+  <div
+    class="blockContainer flex-col items-center sm:justify-start sm:items-start sm:flex-row"
+  >
     <div class="logo">
       <PersonIcon />
     </div>
     <div class="blockText">
-      <div class="titleIconContainer">
-        <h2>Portfolio</h2>
-        <div class="iconsContainer">
+      <div
+        class="flex flex-col justify-center items-center sm:justify-start sm:flex-row gap-4"
+      >
+        <h2
+          class="text-xl sm:text-3xl text-center sm:text-left w-full sm:w-auto"
+        >
+          Portfolio
+        </h2>
+        <div
+          class="iconsContainer justify-center sm:justify-start w-full sm:w-auto"
+        >
           <AstroLogo s="32px" />
           <HTMLLogo s="32" />
           <CSSLogo s="32" />
         </div>
       </div>
-      <p>
+      <p class="text-sm sm:text-base text-center sm:text-start">
         The website you are on right now! Built with Astro for archiving all the
         stuff I've worked on in one place.
       </p>

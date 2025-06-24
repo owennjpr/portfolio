@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/tailwind": "^5.1.2",
-    "astro": "^4.16.13",
+    "@astrojs/tailwind": "^6.0.2",
+    "astro": "^5.10.1",
     "geist-icons": "^1.2.3",
     "tailwindcss": "^3.4.15",
     "typescript": "^5.7.2"
