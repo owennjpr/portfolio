@@ -146,9 +146,7 @@ html {
   
   /* Track */
   ::-webkit-scrollbar-track {
-    /* border: 1px black solid; */
-    
-    background: #e8e8e8;
+    background: #e8e8e800;
   }
    
   /* Handle */
